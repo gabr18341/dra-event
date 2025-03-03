@@ -6,6 +6,9 @@ import About from './(home-sections)/about'
 import Services from './(home-sections)/services'
 import Numbers from './(home-sections)/numbers'
 import EventAccess from './(home-sections)/event-access'
+import Skills from './(home-sections)/skills'
+import NewsLetter from './(home-sections)/news-letter'
+import Footer from '@/components/Footer'
 
 const HomePage = () => {
   return (
@@ -16,6 +19,9 @@ const HomePage = () => {
         <Numbers />
         <Services />
         <EventAccess />
+        <Skills />
+        <NewsLetter />
+        <Footer />
     </div>
   )
 }

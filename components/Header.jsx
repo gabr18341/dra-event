@@ -1,13 +1,17 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Facebook, Instagram, Youtube } from "lucide-react";
 import Link from "next/link";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import Image from "next/image";
 import { ShinyButton } from "./magicui/shiny-button";
+import scrollEvent from "@/app/code";
 
 
 const Header = () => {
+  useEffect(() => {
+    scrollEvent();
+  }, []);
   return (
     <header className=" fixed top-0 left-0 w-full z-[500] py-2">
       <div className="container px-4 md:px-12 flex justify-between items-center">

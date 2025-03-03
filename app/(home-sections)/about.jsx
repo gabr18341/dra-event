@@ -8,7 +8,7 @@ const About = () => {
             <div className="left-box relative max-w-[50%]">
                 <div className="flex gap-4 ">
                     <div className="big-image w-1/3 flex-grow h-full">
-                        <img src="/events/1.jpg" alt="events" />
+                        <img src="/events/shafeek.jpg" alt="events" />
                     </div>
                     <div className="exp-box flex flex-col h-fit justify-center items-center gap-4">
                         <span className="years bg-white rounded-full p-4 text-4xl text-[#143745] w-20 h-20 font-bold ">+5</span>
@@ -16,7 +16,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="small-image">
-                    <img src="/events/2.jpg" alt="events" />
+                    <img src="/events/abstract-colourful-green-show-light.jpg" alt="events" />
                 </div>
             </div>
             <div className="about-content">
@@ -30,7 +30,7 @@ const About = () => {
                 At DRA Agency, We specialize in organizing exhibitions and conferences, offering complete event management solutions. 
 From planning and logistics to branding and execution, we ensure seamless and successful events tailored to your needs
                 </p>
-                <img src="/events/7.jpg" alt="events" />
+                <img src="/events/3d-event-entertainment-concept-stage-stage-lights-concert-music-festival.jpg" alt="events" />
                 <div className="mt-8 flex items-center gap-4 ">
                     <div className="flex items-center gap-4">
                         <CheckCircle size={20} color='#acd147' />

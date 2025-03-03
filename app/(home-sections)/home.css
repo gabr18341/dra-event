@@ -207,16 +207,19 @@ header nav ul li a {
 .event-access .content {
     color: white;
     width: 50%;
-    max-width: 500px;
+    max-width: 700px;
+    position: relative;
+    z-index: 3;
 }
 .event-access .content h4 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     margin-bottom: 20px;
     
 }
 .event-access .content p {
     font-size: 1.2rem;
-    color: var(--sec-color);
+    color: white;
 }
 .event-access .event-img {
     position: absolute;
@@ -231,10 +234,206 @@ header nav ul li a {
     
 }
 .event-access .event-img img {
-    max-width: 100%;
-    transform: rotate(-45deg) translate(10px, 200px);
-    -webkit-transform: rotate(-45deg) translate(10px, 200px);
-    -moz-transform: rotate(-45deg) translate(10px, 200px);
-    -ms-transform: rotate(-45deg) translate(10px, 200px);
-    -o-transform: rotate(-45deg) translate(10px, 200px);
+    width: 180%;
+    max-width: 200%;
+    transform: rotate(-30deg) translate(-50px, 10px);
+    -webkit-transform: rotate(-30deg) translate(-50px, 10px);
+    -moz-transform: rotate(-30deg) translate(-50px, 10px);
+    -ms-transform: rotate(-30deg) translate(-50px, 10px);
+    -o-transform: rotate(-30deg) translate(-50px, 10px);
+}
+
+/* skills-section ********* */
+.skills-section .skills-card {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.skills-section .skills-card:hover {
+    background-color: var(--main-color);
+}
+.skills-section .skills-card .text-3xl {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.skills-section .skills-card:hover .text-3xl {
+    color: white;
+}
+.skills-section .skills-card .icon {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.skills-section .skills-card:hover .icon {
+    background-color: #14374548;
+}
+
+/* news-letter ******************************************************- */
+.news-letter {
+    margin-bottom: -250px;
+}
+.news-letter .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background-image: url('/blurred-night-lights.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--bg-section);
+}
+.news-letter .container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #143c3ce6;
+    top: 0;
+    left: 0;
+}
+.news-letter .container > .flex {
+    position: relative;
+    z-index: 3;
+}
+.news-letter input::placeholder ,
+.news-letter textarea::placeholder {
+    color: var(--bg-section);
+
+}
+
+.news-letter .content-box .box-info {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 20px 5px;
+    border-bottom: 1px solid var(--bg-section);
+}
+.news-letter .content-box .box-info:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.news-letter .content-box .box-info h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.news-letter .content-box .box-info p,
+.news-letter .content-box .box-info a {
+    color: #ccc;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+.news-letter .content-box .box-info a:hover {
+    color: white;
+}
+.news-letter .content-box .box-info .icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+    background-color: var(--main-color);
+}
+
+/* footer ************************************************ */
+
+footer {
+    color: white;
+    padding-top: 300px;
+}
+footer .main-btn {
+    padding: 12px 30px;
+    border-radius: 34px;
+    -webkit-border-radius: 34px;
+    -moz-border-radius: 34px;
+    -ms-border-radius: 34px;
+    -o-border-radius: 34px;
+    border: 3px solid #B5CC34;
+    box-shadow: 0px 0px 31px 0px #B5CC3452;
+    background-color: #263238;
+    color: white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  }
+footer .social-icons svg {
+    color: white;
+}
+footer .input-box input {
+    background-color: transparent;
+}
+footer .main-btn {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+footer h6 {
+    color: var(--main-color);
+font-weight: 700;
+font-size: 18px;
+line-height: 21.6px;
+letter-spacing: 0%;
+margin-bottom: 20px;
+}
+footer ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+footer ul li svg ,
+footer ul li a {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    letter-spacing: 0%;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+footer ul li:hover {
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+footer ul li:hover a {
+    color: var(--main-color);
+}
+.dialog .input-box input,
+.dialog .input-box textarea {
+    background-color: #fff !important;
+    color: #263238 !important;
+    outline: 0;
+}
+.slider-container {
+    padding: 20px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: white;
 }
