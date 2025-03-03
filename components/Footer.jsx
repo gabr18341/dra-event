@@ -70,7 +70,7 @@ const Footer = () => {
             <div className="flex justify-between sm:gap-4 flex-wrap">
                 <div className="w-full lg:w-1/3 xl:w-1/4">
                     <div className="logo mb-4">
-                        <img className='w-full' src="/DRA LOGO light.png" alt="" />
+                        <img className='h-32' src="/dra agency logo footer.png" alt="" />
                     </div>
                     <p className='text-white'>
                         Empowering businesses with tailored solutions — 
