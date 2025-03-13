@@ -86,7 +86,7 @@ const Services = () => {
           </h4>
         </div>
         <div className="services-container mt-8">
-          <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+          <div className="relative flex w-full flex-col items-center justify-center overflow-hidden overflow-x-auto">
             <Marquee pauseOnHover className="[--duration:100s]">
               {reviews.map((review , index) => (
                 <ReviewCard key={review.title + index} {...review} />
