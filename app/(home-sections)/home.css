@@ -439,5 +439,5 @@ footer ul li:hover a {
 }
 
 .services-container > div::-webkit-scrollbar {
-    /* opacity: 0; */
+    opacity: 0;
 }
