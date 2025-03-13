@@ -132,3 +132,7 @@ section .head h4 {
   margin-left: auto;
   margin-right: auto;
 }
+
+.news-letter .content-box .box-info p, .news-letter .content-box .box-info a {
+  margin-top: 0 !important;
+}

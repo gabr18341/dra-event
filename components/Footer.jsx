@@ -70,12 +70,10 @@ const Footer = () => {
             <div className="flex justify-between sm:gap-4 flex-wrap">
                 <div className="w-full lg:w-1/3 xl:w-1/4">
                     <div className="logo mb-4">
-                        <img className='h-32' src="/dra agency logo footer.png" alt="" />
+                        <img className='w-full h-auto' src="/DRA LOGO light.png" alt="" />
                     </div>
                     <p className='text-white'>
-                        Empowering businesses with tailored solutions — 
-                        Kifah Group excels in manpower management, 
-                        logistics efficiency.
+                    Where creativity meets innovation, and every event tells a story. Welcome to DRA Agency
                     </p>
                     <div className="mt-4">
                         <div className="relative social-icons">
@@ -96,20 +94,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 sm:w-1/4 mt-8  sm:mt-0">
-                    <h6>
-                    Stay in touch with us
-                    </h6>
-                    <p>
-                    Join our newsletter to stay up to date with the latest news and updates.
-                    </p>
-                    <form onSubmit={newsletter} className='mt-20 sm:mt-0' >
-                        
-                    <div className="mt-4">
-                        <button type='submit' className='main-btn '>Read More</button>
-                    </div>
-                    </form>
-                </div>
                 <div className="w-1/2 sm:w-1/4 mt-8 sm:mt-0">
                     <h6>Explore</h6>
                     <ul>
@@ -117,20 +101,36 @@ const Footer = () => {
                             <ChevronRight /> <Link href='#'>Home</Link>
                         </li>
                         <li>
-                            <ChevronRight /> <Link href='#'>About</Link>
+                            <ChevronRight /> <Link href='#about'>About</Link>
                         </li>
                         <li>
-                            <ChevronRight /> <Link href='#'>Contact Us</Link>
+                            <ChevronRight /> <Link href='#services'>Our Services</Link>
                         </li>
                     </ul>
                 </div>
+                <div className="w-1/2 sm:w-1/4 mt-8  sm:mt-0">
+                    <h6>
+                    Stay in touch with us
+                    </h6>
+                    <p>
+                    Join our newsletter to stay up to date with the latest news and updates.
+                    
+                    </p>
+                    <form onSubmit={newsletter} className='mt-20 sm:mt-0' >
+                        
+                    <div className="mt-4">
+                        <button type='submit' style={{padding: "10px 30px"}} className='main-btn '>Read More</button>
+                    </div>
+                    </form>
+                </div>
+                
             </div>
             <div className="border-t mt-2 pt-8 flex justify-between items-center">
                 <p className='text-sm'>
                 Copyright 2025
                 </p>
                 <p className='text-sm'>
-                All rights reserved <span className='text-[#B5CC34]'><Link href='https://kascco.sa/'>Kascco Group</Link></span>
+                All rights reserved <span className='text-[#B5CC34]'><Link href='https://dra.sa/'>DRA</Link></span>
                 </p>
             </div>
         </div>

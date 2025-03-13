@@ -77,7 +77,7 @@ const Services = () => {
   };
 
   return (
-    <section className=" services-section py-10 md:py-20 px-8 md:px-20">
+    <section id="services" className=" services-section py-10 md:py-20 px-8 md:px-20">
       <div className="container px-4 md:px-12 ">
         <div className="head">
           <h6>Services</h6>

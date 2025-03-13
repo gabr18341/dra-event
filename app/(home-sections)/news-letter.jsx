@@ -21,8 +21,8 @@ const NewsLetter = () => {
             </form>
           </div>
           <div className="content-box w-full md:w-1/2 md:pl-4">
-            <h5 className="text-white text-sm md:text-lg font-bold">USA Office Address</h5>
-            <p className="text-[#f4f3f8]   text-xs md:text-sm my-3">Completely recapitalize 24/7 communities via standards compliant metrics whereas web-enabled content</p>
+            <h5 className="text-white text-sm md:text-lg font-bold">Let's create something unforgettable together with DRA Agency</h5>
+            {/* <p className="text-[#f4f3f8]   text-xs md:text-sm my-3">Let's create something unforgettable together with DRA Agency</p> */}
             <div className="mt-4">
               <div className="box-info">
                 <div className="icon-box ">
