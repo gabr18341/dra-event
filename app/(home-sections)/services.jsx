@@ -85,16 +85,16 @@ const Services = () => {
             Get A New Experience With DRA Services
           </h4>
         </div>
-        <div className="services-container mt-8">
+        <div className="services-container mt-8 relative">
           <div className="relative flex w-full flex-col items-center justify-center overflow-hidden overflow-x-auto">
             <Marquee pauseOnHover className="[--duration:100s]">
               {reviews.map((review , index) => (
                 <ReviewCard key={review.title + index} {...review} />
               ))}
             </Marquee>
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-[#f4f3f8]"></div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-[#f4f3f8]"></div>
           </div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-[#f4f3f8]"></div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-[#f4f3f8]"></div>
         </div>
       </div>
     </section>
