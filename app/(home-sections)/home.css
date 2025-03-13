@@ -437,3 +437,7 @@ footer ul li:hover a {
     -o-border-radius: 20px;
     background-color: white;
 }
+
+.services-container > div::-webkit-scrollbar {
+    /* opacity: 0; */
+}
