@@ -3,66 +3,10 @@ import React, { useEffect, useState } from 'react'
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ChevronRight, Facebook, Instagram, Twitter, X, Youtube } from 'lucide-react';
 import Link from 'next/link';
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
-  } from "@/components/ui/select"
 import axios from 'axios';
 
 const Footer = () => {
-     const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
-        const [formData, setFormData] = useState({
-            email: "",
-            services: [],
-            // override: false,
-        })
-        const [services, setServices] = useState([])
-        const [error, setError] = useState("")
-        function handelSetData(e) {
-            setFormData({
-                ...formData,
-                [e.target.name]: e.target.value
-            });
-        }
-    async function getServices() {
-        try {
-            const { data: result } = await axios.get(
-                `${baseURL}/services/`,
-                formData
-              );
-              setServices(result);
-              
-              
-        } catch (err) {
-            console.log(err);
-        }
-    }
-    useEffect(() => {
-        getServices()
-    }, [])
-    async function newsletter(e) {
-        e.preventDefault()
-        if (formData.email !== "" && formData.services.length > 0) {
-            try {
-                await axios.post(
-                    `${baseURL}/newsletter/`,
-                    formData
-                );
-                setError("")
-            } catch (err) {
-                console.log(err.message);
-                setError(err.message)
-            }
-        } else if (formData.email === "") {
-            setError("Please enter your email")
-        } else if (formData.services.length === 0) {
-            setError("Please select a service")
-        }
-    }
+     
         
   return (
     <footer className='pb-8 bg-[#163744]'>
@@ -116,12 +60,10 @@ const Footer = () => {
                     Join our newsletter to stay up to date with the latest news and updates.
                     
                     </p>
-                    <form onSubmit={newsletter} className='mt-20 sm:mt-0' >
-                        
+                    
                     <div className="mt-4">
-                        <button type='submit' style={{padding: "10px 30px"}} className='main-btn '>Read More</button>
+                        <Link href={'https://dra.sa/'} style={{padding: "10px 30px"}} className='main-btn '>Read More</Link>
                     </div>
-                    </form>
                 </div>
                 
             </div>
