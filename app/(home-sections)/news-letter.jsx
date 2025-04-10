@@ -24,6 +24,28 @@ const NewsLetter = () => {
     async function contact(e) {
       e.preventDefault();
         const btn = refButton.current;
+        if (btn) {
+            btn.disabled = true;
+            try {
+                await axios.post(
+                    `${baseURL}/tickets/contact/`,
+                    formData
+                );
+                setError("");
+                btn.innerHTML = "Send Message";
+                btn.disabled = false;
+                setFormData({
+                    name: "",
+                    email: "",
+                    message: "",  
+                });
+            } catch (err) {
+                console.log(err.message);
+                setError(err.message);
+                btn.disabled = false; 
+                btn.innerHTML = "Send Message";
+            }
+        }
         let emailValid = validateEmail(formData.email);
         if ( emailValid && formData.name.length >= 3 && formData.message.length >= 6) {
           btn.innerHTML = "Loading...";
